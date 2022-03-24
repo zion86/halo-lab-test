@@ -1,0 +1,25 @@
+.cards-list {
+  --column: 1;
+
+  width: 100%;
+  display: grid;
+  grid-template: auto / repeat(var(--column), 1fr);
+  gap: 16px;
+}
+
+.cards-list--gap {
+  margin-bottom: 69px;
+}
+
+@media (min-width: 680px) {
+  .cards-list {
+    --column: 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards-list {
+    --column: 3;
+    gap: 40px 32px;
+  }
+}
